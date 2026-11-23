@@ -197,7 +197,7 @@ function farmSteps(p, age) {
   var capital = capitalFor(p);
   var hold = holdDaysFor(age);
   return [
-    { text: 'Use a fresh wallet that holds only the funds you plan to farm, and keep its seed phrase offline.', cost: 'under $3 of gas for the first transaction', time: '5 minutes' },
+    { text: 'Open a fresh wallet on ' + chain + ' that holds only the funds you plan to farm, and keep its seed phrase offline.', cost: 'under $3 of gas for the first transaction', time: '5 minutes' },
     { text: actionFor(p, capital, chain), cost: '$' + capital + ' of capital and about $' + (capital >= 150 ? 8 : 4) + ' of gas', time: '15 minutes to set up' },
     { text: secondActionFor(p, capital, chain), cost: 'about $' + (capital >= 150 ? 6 : 3) + ' of gas', time: '15 minutes' },
     { text: 'Make one qualifying action each week, such as a deposit, a borrow, a swap or a vote, and never let a week pass with no activity.', cost: 'about $2 of gas a week', time: '10 minutes a week' },
