@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar: pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Token launch radar &middot; snapshot as of <span id="asof">—</span></p>
+    <h1>Which pre-token protocol is worth farming next?</h1>
+    <p class="standfirst">Every protocol below records no token. The board ranks them by an implied value
+    computed from the snapshot&rsquo;s own figures — TVL, seven-day growth, time running with no token,
+    chain reach and category — never from a hand-kept list of names. Each row carries the steps to farm it.</p>
+    <p class="counts" id="counts"></p>
+  </div>
+</header>
+<main id="board" tabindex="-1">
+  <section class="toolbar" aria-label="Board controls">
+    <div class="tabs" role="tablist" aria-label="Views">
+      <button type="button" class="tab active" data-tab="pre-token" role="tab" aria-selected="true">Pre-token board</button>
+      <button type="button" class="tab" data-tab="live" role="tab" aria-selected="false">Already trading</button>
+    </div>
+    <label class="field">Search <input id="q" type="search" placeholder="Protocol or slug" autocomplete="off"></label>
+    <label class="field">Category
+      <select id="category"><option value="all">All categories</option></select>
+    </label>
+    <label class="field">Chain
+      <select id="chain"><option value="all">All chains</option></select>
+    </label>
+    <label class="check"><input id="watchlist-only" type="checkbox"> Watchlist only</label>
+    <label class="field">Sort by
+      <select id="sort">
+        <option value="implied">Implied value</option>
+        <option value="tvl">TVL</option>
+        <option value="change">7-day change</option>
+        <option value="age">Time with no token</option>
+        <option value="name">Name</option>
+      </select>
+    </label>
+  </section>
+  <section class="method" id="method"></section>
+  <div class="table-wrap">
+    <table id="rows">
+      <thead><tr id="headrow"></tr></thead>
+      <tbody id="body"></tbody>
+    </table>
+    <p class="empty" id="empty" hidden>No protocols match these filters. Loosen the search or clear a filter.</p>
+  </div>
+  <p class="more-wrap"><button type="button" id="more" class="more">Show more</button></p>
+  <section class="detail" id="detail" hidden></section>
+</main>
+<footer class="foot">
+  <p>Implied values are this radar&rsquo;s own claim, computed from the frozen snapshot — never a
+  prediction that a token will be issued, or when. &ldquo;Records no token&rdquo; means the snapshot&rsquo;s
+  record carries no market cap, CoinGecko id or symbol; a protocol may still have a token its record
+  does not carry. Farm with funds you can afford to lose, and claim only from links the protocol itself publishes.</p>
+  <p id="source-line"></p>
+</footer>
+<script src="../data.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
