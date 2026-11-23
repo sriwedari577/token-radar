@@ -1,8 +1,8 @@
 # Token Radar
 
-[![make.fun](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01)
-[![Rank](https://make.fun/badge/token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard)
-[![Reward](https://make.fun/badge/token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01)
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![make.fun · Rank](https://make.fun/badge/token-radar-01/sriwedari577/token-radar/rank.svg)](https://make.fun/leaderboard/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![make.fun · Reward](https://make.fun/badge/token-radar-01/sriwedari577/token-radar/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 A token launch radar: it reads a frozen snapshot of the protocol universe, ranks every
 pre-token protocol by an implied value computed from the snapshot's own figures, and hands in a
